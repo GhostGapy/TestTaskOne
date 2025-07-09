@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.testapppart1.JobItem
+import com.example.testapppart1.JobResponse
 import com.example.testtaskone.api.ApiClient
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -35,8 +36,16 @@ class CiViewModel : ViewModel() {
                     /*val result = JobResponse(
                         name = "Jobs Test",
                         jobs = listOf(
-                            JobItem(name = "Job1", url = "http://example.com/job1", color = if (testToggle) "red" else "blue"),
-                            JobItem(name = "Job2", url = "http://example.com/job2", color = if (testToggle) "blue" else "green")
+                            JobItem(
+                                name = "Job1",
+                                url = "http://example.com/job1",
+                                color = if (testToggle) "red" else "blue"
+                            ),
+                            JobItem(
+                                name = "Job2",
+                                url = "http://example.com/job2",
+                                color = if (testToggle) "blue" else "green"
+                            )
                         )
                     )
                     testToggle = !testToggle*/
